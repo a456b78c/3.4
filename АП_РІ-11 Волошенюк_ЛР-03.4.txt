@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Ukrainian");
+	double x; 
+	double y;
+	double R;
+	cout << "x = "; cin >> x;
+	cout << "y = "; cin >> y;
+	cout << "введіть R більший за 0 = "; cin >> R;
+		
+
+	if ((x <= R && y <= R && x >= 0 && y >= 0) || (x <= 0 && y <= 0 && x >= -R && y >= -R) || (x * x <= R * R - y * y))
+	{
+		cout << "yes";
+	}	
+	else {
+		cout << "no";
+	}
+
+	return 0;
+}
